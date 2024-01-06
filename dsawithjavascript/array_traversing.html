@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Traversing</title>
+    <script>
+      let data = [9, 34, 4, 6, 56, 5, 67, 87, 88, 14, 23];
+      //traversing
+      for (let i = 0; i < data.length; i++) {
+        document.write(`Array ${i} is ${data[i]} <br/>`);
+      }
+      //accessing
+      let x = 3;
+      document.write(data[x]);
+
+      function getElmAccess() {
+        let el = document.getElementById('ElmAccess').value;
+        if (el < data.length) {
+          alert(data[el]);
+        } else {
+          alert('Please enter valid input.');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="ElmAccess" />
+    <button onclick="getElmAccess()">Access Element</button>
+  </body>
+</html>
